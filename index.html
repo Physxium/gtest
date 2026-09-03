@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>게임 종합능력 평가 | Physxium</title>
+
+    <meta name="description" content="5개의 짧은 미니게임으로 반응속도, 판단력, 멀티태스킹, 수행정확성, 예측력을 테스트해보세요.">
+
+    <meta name="author" content="Physxium">
+
+    <!--
+        실제 배포 주소 확정 후
+        canonical / og:url을 입력
+    -->
+    <link rel="canonical" href="">
+
+
+    <!-- Open Graph -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="게임 종합능력 평가 | Physxium">
+
+    <meta property="og:description" content="5개의 짧은 게임으로 나의 게임 능력을 확인해보세요.">
+
+    <meta property="og:url" content="">
+
+
+    <!--
+        Google Analytics
+        광고
+        사이트 인증
+        OG 이미지
+
+        실제 배포 주소 확정 후 추가
+    -->
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<body>
+
+    <main id="appShell" class="app-shell">
+
+        <!-- ------------------------------
+             Header
+        ------------------------------ -->
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <h1 id="siteTitle">
+                    게임 종합능력 평가
+                </h1>
+
+                <p id="siteSubtitle" class="site-subtitle">
+                    5개의 짧은 게임으로 당신의 게임 능력을 테스트합니다.
+                </p>
+
+                <p class="developer">
+
+                    Developed by
+
+                    <a href="https://physxium.pages.dev/" target="_blank" rel="noopener noreferrer">
+                        Physxium (Han Gyeol Lee) ↗
+                    </a>
+
+                </p>
+
+            </div>
+
+
+            <button id="languageButton" class="language-button" type="button">
+                KO / EN
+            </button>
+
+        </header>
+
+
+        <!-- ------------------------------
+             Test Area
+        ------------------------------ -->
+
+        <section id="testArea" class="test-area">
+
+            <div class="test-status">
+
+                <span id="gameProgress" class="game-progress">
+                    READY
+                </span>
+
+                <span id="gameName" class="game-name">
+                    게임 종합능력 평가
+                </span>
+
+            </div>
+
+
+            <section id="gameCard" class="game-card">
+
+                <div id="gameStage" class="game-stage">
+                    <!-- app.js가 화면을 렌더링합니다 -->
+                </div>
+
+
+                <div id="gameStatus" class="game-status" aria-live="polite"></div>
+
+            </section>
+
+        </section>
+
+
+        <!-- ------------------------------
+             Footer
+        ------------------------------ -->
+
+        <footer class="site-footer">
+
+            <a href="https://physxium.pages.dev/privacy" target="_blank" rel="noopener noreferrer">
+                개인정보처리방침 / Privacy Policy
+            </a>
+
+        </footer>
+
+    </main>
+
+
+    <!-- ------------------------------
+         Games
+    ------------------------------ -->
+
+    <script src="./js/game-reaction.js"></script>
+
+    <script src="./js/game-judgment.js"></script>
+
+    <script src="./js/game-multitask.js"></script>
+
+    <script src="./js/game-precision.js"></script>
+
+    <script src="./js/game-prediction.js"></script>
+
+
+    <!-- ------------------------------
+         App
+    ------------------------------ -->
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
