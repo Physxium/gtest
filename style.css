@@ -3172,3 +3172,21 @@ h1 {
     }
 
 }
+
+#adfitBottomWrap {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin:
+        18px auto 8px;
+}
+
+
+#adfitBottomWrap .kakao_ad_area {
+    display: block;
+
+    max-width: 100%;
+}
