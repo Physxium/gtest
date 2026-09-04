@@ -2,7 +2,7 @@
    Settings
 ================================== */
 
-const BALANCED_STD_MAX = 10;
+const BALANCED_STD_MAX = 12;
 
 const PERFECT_AVERAGE = 85;
 
@@ -130,99 +130,229 @@ const TITLES = {
 
     perfect: {
         ko: "완벽한 플레이어",
-        en: "Complete Player"
+        en: "Complete Player",
+
+        descriptionKo:
+            "모든 능력치가 높은 수준으로 고르게 발달했습니다.",
+
+        descriptionEn:
+            "All five abilities are strong and well balanced."
     },
+
 
     solid: {
         ko: "어디서든 1인분",
-        en: "Always Pulls Their Weight"
+        en: "Always Pulls Their Weight",
+
+        descriptionKo:
+            "전반적으로 안정적이고 균형 잡힌 능력치를 보입니다.",
+
+        descriptionEn:
+            "Your abilities are balanced and consistently solid across the board."
     },
+
 
     troll: {
         ko: "즐겜하는 척하는 트롤",
-        en: "The “Just for Fun” Troll"
+        en: "The “Just for Fun” Troll",
+
+        descriptionKo:
+            "전반적인 능력치가 낮은 편입니다. 즐겜이라고 해두는 편이 마음이 편합니다.",
+
+        descriptionEn:
+            "Your overall scores are on the low side. Calling it “just for fun” might be the safest play."
     },
+
 
     average: {
         ko: "킹반인",
-        en: "Average Gamer"
+        en: "Average Gamer",
+
+        descriptionKo:
+            "특별히 튀는 강점이나 약점 없이 무난한 능력 분포를 보입니다.",
+
+        descriptionEn:
+            "Your abilities are fairly even, without any extreme strengths or weaknesses."
     },
 
 
     reactionOneTrick: {
         ko: "반응속도 원툴",
-        en: "Reaction One-Trick"
+        en: "Reaction One-Trick",
+
+        descriptionKo:
+            "반응속도가 다른 능력보다 유독 두드러집니다.",
+
+        descriptionEn:
+            "Your reaction speed stands out far more than your other abilities."
     },
+
 
     judgmentOneTrick: {
         ko: "판단력 원툴",
-        en: "Decision One-Trick"
+        en: "Decision One-Trick",
+
+        descriptionKo:
+            "판단력이 다른 능력보다 유독 두드러집니다.",
+
+        descriptionEn:
+            "Your decision-making ability stands out far more than your other abilities."
     },
+
 
     multitaskOneTrick: {
         ko: "멀티태스킹 원툴",
-        en: "Multitasking One-Trick"
+        en: "Multitasking One-Trick",
+
+        descriptionKo:
+            "여러 요소를 동시에 처리하는 능력이 유독 두드러집니다.",
+
+        descriptionEn:
+            "Your ability to handle multiple things at once stands out above the rest."
     },
+
 
     precisionOneTrick: {
         ko: "수행정확성 원툴",
-        en: "Precision One-Trick"
+        en: "Precision One-Trick",
+
+        descriptionKo:
+            "안정적이고 정확하게 수행하는 능력이 유독 두드러집니다.",
+
+        descriptionEn:
+            "Your ability to execute accurately and consistently stands out above the rest."
     },
+
 
     predictionOneTrick: {
         ko: "예측력 원툴",
-        en: "Prediction One-Trick"
+        en: "Prediction One-Trick",
+
+        descriptionKo:
+            "다음 상황을 미리 읽는 능력이 유독 두드러집니다.",
+
+        descriptionEn:
+            "Your ability to anticipate what comes next stands out above the rest."
     },
 
 
     reactionJudgment: {
         ko: "교전 최강",
-        en: "Duel Dominator"
+        en: "Duel Dominator",
+
+        descriptionKo:
+            "반응속도와 판단력이 강점입니다. 빠른 교전 상황에서 힘을 발휘합니다.",
+
+        descriptionEn:
+            "Reaction speed and decision making are your strengths. You excel in fast-paced engagements."
     },
+
 
     reactionMultitask: {
         ko: "APM 괴물",
-        en: "APM Monster"
+        en: "APM Monster",
+
+        descriptionKo:
+            "반응속도와 멀티태스킹이 강점입니다. 빠르게 움직이며 여러 일을 동시에 처리합니다.",
+
+        descriptionEn:
+            "Reaction speed and multitasking are your strengths. You handle rapid actions and multiple demands at once."
     },
+
 
     reactionPrecision: {
         ko: "피지컬로 극복",
-        en: "Mechanical Carry"
+        en: "Mechanical Carry",
+
+        descriptionKo:
+            "반응속도와 수행정확성이 강점입니다. 빠르고 정확한 조작이 돋보입니다.",
+
+        descriptionEn:
+            "Reaction speed and precision are your strengths. Your fast and accurate execution stands out."
     },
+
 
     reactionPrediction: {
         ko: "선빵 필승",
-        en: "First-Strike Specialist"
+        en: "First-Strike Specialist",
+
+        descriptionKo:
+            "반응속도와 예측력이 강점입니다. 한발 먼저 읽고 빠르게 대응합니다.",
+
+        descriptionEn:
+            "Reaction speed and prediction are your strengths. You read situations early and respond quickly."
     },
+
 
     judgmentMultitask: {
         ko: "총사령관",
-        en: "Field Commander"
+        en: "Field Commander",
+
+        descriptionKo:
+            "판단력과 멀티태스킹이 강점입니다. 복잡한 상황에서도 여러 정보를 동시에 관리합니다.",
+
+        descriptionEn:
+            "Decision making and multitasking are your strengths. You manage multiple pieces of information even in complex situations."
     },
+
 
     judgmentPrecision: {
         ko: "안정적인 캐리",
-        en: "Reliable Carry"
+        en: "Reliable Carry",
+
+        descriptionKo:
+            "판단력과 수행정확성이 강점입니다. 실수를 줄이며 안정적으로 좋은 선택을 이어갑니다.",
+
+        descriptionEn:
+            "Decision making and precision are your strengths. You make reliable choices while keeping mistakes to a minimum."
     },
+
 
     judgmentPrediction: {
         ko: "예언자",
-        en: "The Prophet"
+        en: "The Prophet",
+
+        descriptionKo:
+            "판단력과 예측력이 강점입니다. 다음 상황을 읽고 유리한 선택을 만드는 데 능합니다.",
+
+        descriptionEn:
+            "Decision making and prediction are your strengths. You anticipate what comes next and turn it into better choices."
     },
+
 
     multitaskPrecision: {
         ko: "알파고",
-        en: "The Machine"
+        en: "The Machine",
+
+        descriptionKo:
+            "멀티태스킹과 수행정확성이 강점입니다. 여러 일을 동시에 처리하면서도 정확도를 유지합니다.",
+
+        descriptionEn:
+            "Multitasking and precision are your strengths. You stay accurate even while handling several things at once."
     },
+
 
     multitaskPrediction: {
         ko: "나무보다 숲",
-        en: "Big-Picture Player"
+        en: "Big-Picture Player",
+
+        descriptionKo:
+            "멀티태스킹과 예측력이 강점입니다. 여러 요소를 함께 보며 전체 흐름을 읽는 데 능합니다.",
+
+        descriptionEn:
+            "Multitasking and prediction are your strengths. You track multiple elements while keeping sight of the bigger picture."
     },
+
 
     precisionPrediction: {
         ko: "각 보는 장인",
-        en: "Window Hunter"
+        en: "Window Hunter",
+
+        descriptionKo:
+            "수행정확성과 예측력이 강점입니다. 기회를 읽고 정확한 순간에 실행하는 데 능합니다.",
+
+        descriptionEn:
+            "Precision and prediction are your strengths. You spot opportunities and execute at the right moment."
     }
 
 };
@@ -694,6 +824,14 @@ function classifyTitle(
         getStandardDeviation(
             values
         );
+
+    if (
+        average <= 40
+    ) {
+
+        return "troll";
+
+    }  
 
 
     /*
@@ -1475,6 +1613,14 @@ function render() {
                     class="result-radar"
                 ></canvas>
 
+            </div>
+
+            <div class="final-result-description">
+                ${
+                    language === "ko"
+                        ? title.descriptionKo
+                        : title.descriptionEn
+                }
             </div>
 
 

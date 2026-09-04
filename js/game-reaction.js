@@ -104,27 +104,18 @@ const reactionGame = (() => {
 
     function getReactionPoints(ms) {
 
-        /*
-            임시 점수식
-    
-            150ms 이하 = 10점
-            550ms 이상 = 0점
-            그 사이는 선형 감소
-    
-            실제 플레이 후 조정 예정
-        */
-
-        if (ms <= 150) {
+        
+        if (ms <= 200) {
             return 10;
         }
 
-        if (ms >= 550) {
+        if (ms >= 600) {
             return 0;
         }
 
         return (
             10 *
-            (550 - ms) /
+            (600 - ms) /
             400
         );
     }
