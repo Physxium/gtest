@@ -637,15 +637,60 @@ function t(key) {
    Sound
 ------------------------------ */
 
+const SOUNDS = {
+
+    click:
+        new Audio(
+            "./assets/sounds/click.mp3"
+        ),
+
+    correct:
+        new Audio(
+            "./assets/sounds/correct.mp3"
+        ),
+
+    wrong:
+        new Audio(
+            "./assets/sounds/wrong.mp3"
+        )
+
+};
+
+
+Object.values(
+    SOUNDS
+).forEach(
+    sound => {
+
+        sound.preload =
+            "auto";
+
+        sound.volume =
+            0.65;
+
+    }
+);
+
+
 function playSound(name) {
 
-    /*
-        실제 사운드는 나중에 연결.
+    const sound =
+        SOUNDS[name];
 
-        click
-        correct
-        wrong
-    */
+
+    if (!sound) {
+        return;
+    }
+
+
+    sound.currentTime =
+        0;
+
+
+    sound.play()
+        .catch(
+            () => { }
+        );
 
 }
 
