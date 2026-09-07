@@ -105,7 +105,7 @@ const reactionGame = (() => {
     function getReactionPoints(ms) {
 
         
-        if (ms <= 200) {
+        if (ms <= 250) {
             return 10;
         }
 
@@ -116,7 +116,7 @@ const reactionGame = (() => {
         return (
             10 *
             (600 - ms) /
-            400
+            350
         );
     }
 
